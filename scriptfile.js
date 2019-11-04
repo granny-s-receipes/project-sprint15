@@ -19,7 +19,9 @@ function affichageinitial(){							// this function is for the initial load of t
 }
 }
  affichageinitial() ;
-
+$('body').on('click', '#clear',function(){
+	affichageinitial() 
+})
 
 
 

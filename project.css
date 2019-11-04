@@ -1,3 +1,9 @@
+/*header{
+	border: solid;
+	height: 100px;
+	width: 95%;
+	position: fixed;
+}
 img {
 	width: 20px,
 	height: 20px;
@@ -9,3 +15,21 @@ img {
 body{
 	background-color:  ;
 }
+#main{
+	border: solid ;
+	width: 70%;
+	height: auto;
+	margin-top: 100px
+}
+.imagediv{
+	margin: 25px;
+	display: flex;
+}
+img{
+	width: 30%;
+	height: auto;
+}
+#insertion{
+	margin-top: 100px;
+	border: solid
+}*/
