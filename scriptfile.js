@@ -43,6 +43,7 @@ var result ;
 
 $('#search').on('click', function(){
 	$('#main').html('') ;
+	console.log(this)
 var x = $( "#slt option:selected" ).text();
     console.log(x) ;
    result = search(meals, x)
@@ -80,9 +81,9 @@ function affichageinitial(){
  		// }
  	// 	console.log('aze')
  	// }) 
-$ ('img.wasfa').on('click', (function() {
-    console.log($(this))
-}))
+// $ ('img.wasfa').on('click', (function() {
+//     console.log($(this))
+// }))
 //
 // function affichage(){
 // 	for(var i =0; i < result.length;i++){
@@ -94,6 +95,7 @@ $ ('img.wasfa').on('click', (function() {
 
 var xx = ''
 $('div.imagediv').click(function() {
+	console.log(this)
   xx = this.innerHTML ;
   console.log(xx)
   var arrayof= xx.split('')
@@ -105,6 +107,7 @@ var objResult ;
 for(var i =0; i<meals.length; i++){
 	if(meals[i].img === newArr){
 		objResult = meals[i]
+		console.log(objResult)
 	}
 }
 
