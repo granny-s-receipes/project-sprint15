@@ -12,12 +12,12 @@ var duida = createMeal('duida', {'duida' : 2, 'tomato': 200, 'oil': 20, 'salt' :
 var hargma = createMeal('hargma', {'animal legs' : 2, 'tomato': 200,'onion':2, 'oil': 20, 'salt' : 5,'harissa':15, 'garlic': 1, 'cow meat': 200, }, 10, 'https://www.recettemarocaine365.com/wp-content/uploads/2017/02/hargma.jpg')
 var brik = createMeal('brik with eggs', {'malssouka' : 2, 'onion':2, 'potato': 20, 'salt' : 5,'harissa':15, 'tuna': 200, 'eggs':1 }, 10, 'https://i.ytimg.com/vi/qDs77bFs-Rk/maxresdefault.jpg')
 var mtabga = createMeal('mtabga', {'bread' : 2, 'onion':2, 'salt' : 5,'harissa':15,  'eggs':1 }, 10, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI84MOKxdjewGwm-noX4xs2iuS7Hy-OGg7sNrUz8ZUOrvhckpf&s')
-var kaftegi = createMeal('kafteji', {'bread' : 2, 'onion':2, 'salt' : 5,'harissa':15,  'eggs':1 }, 10, 'https://www.carthageplus.net/wp-content/uploads/2018/05/30856051_1720283794704409_5357705005765754880_n-1-780x405.jpg')
+var kafteji = createMeal('kafteji', {'bread' : 2, 'onion':2, 'salt' : 5,'harissa':15,  'eggs':1 }, 10, 'https://www.carthageplus.net/wp-content/uploads/2018/05/30856051_1720283794704409_5357705005765754880_n-1-780x405.jpg')
 var lablebi = createMeal('lablebi', {'bread' : 2, 'onion':2, 'salt' : 5,'harissa':15,  'eggs':1 }, 10, 'https://i1.wp.com/www.1001recettes.tn/wp-content/uploads/2018/12/Lablabi-bel-hargma.jpg?fit=600%2C300&ssl=1&w=640')
 
 
 
-var meals =[spaguetty,couscousWithFish,mosli,rouzJerbi,pizza,hamburger,mlawi,nwasser,tunisianplate,duida,hargma,brik,mtabga,lablebi,kaftegi] ;
+var meals =[spaguetty,couscousWithFish,mosli,rouzJerbi,pizza,hamburger,mlawi,nwasser,duida,hargma,brik,mtabga,kafteji,lablebi,tunisianplate] ;
 
 var url = 'https://victoriapublicmarket.com/wp-content/uploads/2018/02/10492h-cooking-ingredients-picture-in-hd.jpg'
 function affichageinitial(){							// this function is for the initial load of the page
@@ -98,7 +98,7 @@ var selectedStr = $( "#slt option:selected" ).text();		// this variables takes t
  })
 
 
-
+var objResult ;	
 var photoHtml = ''
 $('body').on('click','.imagediv', function() {
 																		//this function is to create a variable containing the object	//of the image that we click on
@@ -106,18 +106,18 @@ $('body').on('click','.imagediv', function() {
   																																								//this variable takes the html text  
   var arrayof= photoHtml.split('')																								//now we extract the image source from that selection  
   var newArr = arrayof.slice(arrayof.indexOf('h'),arrayof.length -2).join('') ;		 
-	var objResult ;																																	//this object will represents the source obj of the image we clicked on
+																																	//this object will represents the source obj of the image we clicked on
 for(var i =0; i<meals.length; i++){																								//we loop the meals array and we look for the object that contains the image we clicked on
 	if(meals[i].img === newArr){
 		objResult = meals[i]																													//whenever we find that object we put it in the variable
 		console.log(objResult)
 	}
 }
+
+
 var description = objResult.name	
 var nameh = $('<h2></h2>')
 nameh.text(objResult.name)
-console.log('this is the name')
-console.log(nameh)
 $(this).append(nameh)
 var ingredientList= $('<ul></ul>')
 for(var i in objResult.ingredients){
@@ -130,13 +130,58 @@ $(this).append(ingredientList)
 
 console.log('this')
 console.log(this)
-// $(this).animate({
-//     left: '250px',
-//     opacity: '0.5',
-//     height: '150px',
-//     width: '150px'
+ xxxx= this
+
 })
 
 
- 
+var xxxx
+
+
 //now we construct the element we want to affiche when a photo is clicked
+
+// $('#imagediv').onclick().toggle(function() {
+// 																		//this function is to create a variable containing the object	//of the image that we click on
+//   photoHtml = this.innerHTML ;	
+//   																																								//this variable takes the html text  
+//   var arrayof= photoHtml.split('')																								//now we extract the image source from that selection  
+//   var newArr = arrayof.slice(arrayof.indexOf('h'),arrayof.length -2).join('') ;		 
+// 	var objResult ;																																	//this object will represents the source obj of the image we clicked on
+// for(var i =0; i<meals.length; i++){																								//we loop the meals array and we look for the object that contains the image we clicked on
+// 	if(meals[i].img === newArr){
+// 		objResult = meals[i]																													//whenever we find that object we put it in the variable
+// 		console.log(objResult)
+// 	}
+// }
+
+
+// var description = objResult.name	
+// var nameh = $('<h2></h2>')
+// nameh.text(objResult.name)
+// $(this).append(nameh)
+// var ingredientList= $('<ul></ul>')
+// for(var i in objResult.ingredients){
+// 	var list = $('<li></li>') ;
+// 	list.text(i + ': ' + objResult.ingredients[i])
+// 	ingredientList.append(list)
+	
+// }
+// $(this).append(ingredientList)
+
+// console.log('this')
+// console.log(this)
+//  xxxx= this
+
+// }, function(){
+// 	this.hide()
+// })
+
+
+// $('body').on('click','.imagediv', function() {
+// 	$(this).hide()
+// })
+
+
+$('body').on('dblclick','.imagediv', function() {
+alert('helloooo')
+	$(this.html).slideUp('fast') })

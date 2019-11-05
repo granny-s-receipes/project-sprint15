@@ -19,6 +19,7 @@
 	width: 95%;
 	position: absolute;
 	text-align: center;
+	border: solid 1px red;
 }
 
 
@@ -64,5 +65,13 @@ h2{
 }
 
 #logo{
-	float: left;
+	float: left ;
+}
+
+/*#goback{
+	position: relative;
+	margin-top: 450px;
+}*/
+body{
+	position:flex;
 }
