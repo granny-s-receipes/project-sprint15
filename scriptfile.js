@@ -8,7 +8,7 @@ var meals =[spaguetty,couscousWithFish,mosli,rouzJerbi] ;
 
 
 function affichageinitial(){							// this function is for the initial load of the page
-
+	$('#main').html('')	
    for(var i =0; i < meals.length;i++){					// we loop the meals array and we append all the element's image to the main
     var imgdiv = $('<div class ="imagediv"></div>')
 	var img = $('<img>')
@@ -19,7 +19,9 @@ function affichageinitial(){							// this function is for the initial load of t
 }
 }
  affichageinitial() ;
-
+$('body').on('click', '#clear',function(){
+	affichageinitial() 
+})
 
 
 
@@ -83,29 +85,34 @@ var selectedStr = $( "#slt option:selected" ).text();		// this variables takes t
 
 
 var photoHtml = ''
-$('body').on('click','.imagediv', function() {			//this function is to create a variable containing the object
-  //console.log(this)							//of the image that we click on
-  photoHtml = this.innerHTML ;							//this variable takes the html text
-  //console.log(photoHtml)
-  var arrayof= photoHtml.split('')						//now we extract the image source from that selection
-  //console.log(arrayof)
-  var newArr = arrayof.slice(arrayof.indexOf('h'),arrayof.length -2).join('') ;		
-  //console.log(arrayof)
-  //console.log(newArr)
-var objResult ;									//this object will represents the source obj of the image we clicked on
-for(var i =0; i<meals.length; i++){				//we loop the meals array and we look for the object that contains the image we clicked on
+$('body').on('click','.imagediv', function() {																		//this function is to create a variable containing the object	//of the image that we click on
+  photoHtml = this.innerHTML ;	
+  																																								//this variable takes the html text  
+  var arrayof= photoHtml.split('')																								//now we extract the image source from that selection  
+  var newArr = arrayof.slice(arrayof.indexOf('h'),arrayof.length -2).join('') ;		 
+	var objResult ;																																	//this object will represents the source obj of the image we clicked on
+for(var i =0; i<meals.length; i++){																								//we loop the meals array and we look for the object that contains the image we clicked on
 	if(meals[i].img === newArr){
-		objResult = meals[i]					//whenever we find that object we put it in the variable
+		objResult = meals[i]																													//whenever we find that object we put it in the variable
 		console.log(objResult)
 	}
 }
+var description = objResult.name	
+var nameh = $('<h2></h2>')
+nameh.text(objResult.name)
+console.log('this is the name')
+console.log(nameh)
+$(this).append(nameh)
+var ingredientList= $('<ul></ul>')
+for(var i in objResult.ingredients){
+	var list = $('<li></li>') ;
+	list.text(i + ': ' + objResult.ingredients[i])
+	ingredientList.append(list)
+}
+$(this).append(ingredientList)
+console.log(ingredientList)
 
-$(this).append(objResult.name)
 
 })
 
-$('body').on('click','.imagediv', function() {			//this function is to create a variable containing the object
-   
-
-	console.log('you clicked on an image')         })
-
+//now we construct the element we want to affiche when a photo is clicked
