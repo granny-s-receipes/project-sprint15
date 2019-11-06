@@ -1,11 +1,119 @@
-img {
-	width: 20px,
-	height: 20px;
+#url {							/*//ingredient list*/
+ 	opacity: 0.5;
+ 	z-index: -1;
+ 	width: 100vw;
+ 	height: 100vw;
+ 	position: fixed;
 }
-.wasfa{
-	width: 20px,
-	height: 20ps;
+
+#main{							/*center of the page where the meals are dislayed*/
+  display: flex;
+  flex-flow: row wrap;
+  align-content: ;
+  justify-content: space-between;
+  border: solid orange  ;
+  position: absolute;
+  width : 75%;
+   top: 400px;
+   left:12.5%;
+    
 }
-body{
-	background-color:  ;
+
+.imagediv {							/*the div containing the image and ingredient list*/
+  
+  border: 1px solid black;
+  font-size: 20px;
+  /*line-height: 100px;*/
+  text-align: center;
+  margin: 10px;
+  border-radius: 10%
+
+}
+.imagediv:hover{						/*hover over images*/
+	background-color:#4d004d;
+	 
+}
+
+#imageid{								/*the image element*/
+	height: 300px;
+	width: 300px;
+	padding: 10px;
+	border-radius: 20%;
+	opacity: 1;
+	
+}
+
+
+#pagetitle{								/*the page title section*/
+	display: flex;
+	justify-content: center;
+	color: orange ;
+	font-size: 50px;
+	font-family: cursive; 
+
+}
+
+.uldiv{								/*unordered list div*/
+	display:none;
+}
+
+
+
+
+
+#showelement{					/*the element where the reciepe displayed*/
+	display: flex;
+	top: 25%;
+	left: 25%;
+	position:fixed;
+	width: 50%;
+	height: 70%;
+	background-color:  #d9b38c;
+	border-radius: 10%;
+	z-index: +1;
+
+}
+
+#showelement li{					/* sizing and adjusting the list of ingredients inside the showelement*/
+	display : flex;
+	margin-left: 90px;
+	top: 10%;
+	background-color: none;
+	padding-top: 5px;
+	width:400px;
+	position:relative;
+	font-size: 35px;
+}
+
+#showelement #imageid{				/*sizing and adjustion the image inside the showelement div*/
+	display: flex;
+	top: 35%;
+	left: 50%;
+	position:fixed;
+	width: 20%;
+	height: 45%;
+}
+label {								/*buttons label*/
+	color :  #ffc266;
+	font-size: 25px;
+	font-weight: italic ;
+}
+
+input{								/*sizing the text input box*/
+	height: 25px;
+	width: auto;
+	font-size: 17px;
+	margin-top: 20px;
+}
+button{
+	height: 30px;
+	width: auto;
+}
+
+select{
+	height: 30px;
+	width: auto;
+}
+#inputlabel{					
+	padding-bottom: 20px;
 }
