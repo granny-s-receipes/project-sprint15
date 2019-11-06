@@ -1,55 +1,21 @@
-//these are objects that represent the meals, we create the objects using the above function
-var spaguetty = createMeal('spaguetty', {'pates' : 250, 'tomato': 200, 'oil': 20, 'salt' : 5, 'garlic': 1, 'meat': 200, 'cheese':15}, 12, 'https://www.starfrit.com/media/contentmanager/content/cache/1070x1070//recipes/e1_r1_spaghetti.jpg')
-var couscousWithFish = createMeal('couscous with fish', {'couscous':200, 'tomato':100, 'onion': 3, 'garlic': 1, 'peper':4, 'potato':2, 'pumpkin': 100, 'Pagre': 4 , 'calamus': 1, 'salt': 2, 'cloves': 2}, 25, 'https://www.tounsia.net/uploads/2017/09/couscous-mannani.jpg')
-var mosli = createMeal('mosli with rass', {'potato':2, 'tomato':100, 'onion': 3, 'garlic': 1, 'peper':4, 'potato':2, 'pumpkin': 100, 'meat':500, 'curcuma': 25}, 30, 'http://www.baya.tn/wp-content/uploads/2014/07/mosli-allouch-baya.jpg')
-var rouzJerbi = createMeal('rouz jerbi', {'rice': 500, 'spinach': 25, 'peas': 30, 'dandelion': 40, 'chicken': 100,'hrous': 50,'curcuma': 10,'salt': 2}, 20, 'https://www.cuisinetunisienne.tn/wp-content/uploads/2019/02/Recette-Riz-Djerbien-1080x841.jpg')
-var pizza = createMeal('pizza', {'pates' : 250, 'tomato': 200, 'oil': 20, 'salt' : 5, 'garlic': 1, 'tuna': 200, 'cheese':15}, 12, 'https://www.genovaseafood.com/uploads/recipes/pizza-with-tuna-capers-and-olives-sm.jpg')
-var hamburger = createMeal('hamburger', {'pates' : 250, 'tomato': 200, 'oil': 20, 'salt' : 5, 'garlic': 1, 'tuna': 200, 'cheese':15}, 12, 'https://static.cuisineaz.com/400x320/i99425-hamburger.jpg')
-var mlawi = createMeal('mlawi', {'pates' : 250, 'tomato': 200, 'oil': 20, 'salt' : 5, 'garlic': 1, 'tuna': 200, 'cheese':15}, 12, 'https://i.pinimg.com/originals/b6/7c/7f/b67c7fdfb6a2c8858c9c3cd1f4b3beef.jpg')
-var nwasser = createMeal('nwaser', {'pates nwasser' : 250, 'tomato': 200, 'oil': 20, 'salt' : 5, 'garlic': 1, 'chicken': 200, 'cheese':15}, 12, 'https://www.cuisinetunisienne.tn/wp-content/uploads/2019/03/Recette-Nwasser-au-poulet-1080x720.jpg')
-var tunisianplate = createMeal('tunisian', {'eggs' : 2, 'tomato': 200, 'oil': 20, 'salt' : 5,'harissa':15, 'garlic': 1, 'tuna': 200, }, 10, 'https://i.pinimg.com/originals/f6/e5/6f/f6e56feb4dece9a0e8f672a240d306cf.jpg')
-var duida = createMeal('duida', {'duida' : 2, 'tomato': 200, 'oil': 20, 'salt' : 5,'harissa':15, 'garlic': 1, 'cow meat': 200, }, 10, 'https://lepetitjournal.com/sites/default/files/styles/main_article/public/2018-06/DWIDA.png?itok=s_d2Om8M')
-var hargma = createMeal('hargma', {'animal legs' : 2, 'tomato': 200,'onion':2, 'oil': 20, 'salt' : 5,'harissa':15, 'garlic': 1, 'cow meat': 200, }, 10, 'https://www.recettemarocaine365.com/wp-content/uploads/2017/02/hargma.jpg')
-var brik = createMeal('brik with eggs', {'malssouka' : 2, 'onion':2, 'potato': 20, 'salt' : 5,'harissa':15, 'tuna': 200, 'eggs':1 }, 10, 'https://i.ytimg.com/vi/qDs77bFs-Rk/maxresdefault.jpg')
-var mtabga = createMeal('mtabga', {'bread' : 2, 'onion':2, 'salt' : 5,'harissa':15,  'eggs':1 }, 10, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI84MOKxdjewGwm-noX4xs2iuS7Hy-OGg7sNrUz8ZUOrvhckpf&s')
-var kaftegi = createMeal('kafteji', {'bread' : 2, 'onion':2, 'salt' : 5,'harissa':15,  'eggs':1 }, 10, 'https://www.carthageplus.net/wp-content/uploads/2018/05/30856051_1720283794704409_5357705005765754880_n-1-780x405.jpg')
-var lablebi = createMeal('lablebi', {'bread' : 2, 'onion':2, 'salt' : 5,'harissa':15,  'eggs':1 }, 10, 'https://i1.wp.com/www.1001recettes.tn/wp-content/uploads/2018/12/Lablabi-bel-hargma.jpg?fit=600%2C300&ssl=1&w=640')
+var spaguetty = createMeal('spaguetty', {'pates' : '250 gr', 'tomato': '200gr ', 'oil': '20 ml', 'salt' : '5 g', 'garlic': '10 gr', 'meat': '200 gr ', 'cheese':'15 gr'}, 12, 'https://www.starfrit.com/media/contentmanager/content/cache/1070x1070//recipes/e1_r1_spaghetti.jpg')
+var couscousWithFish = createMeal('couscous with fish', {'couscous':'200 gr', 'tomato':'100 gr', 'onion': '30 gr', 'garlic': '10 gr', 'peper':'40 gr', 'potato':'50 gr', 'pumpkin': '100 gr', 'Pagre': '10 gr' , 'cinnamon': '10gr', 'salt': '2 gr', 'cloves': '20gr'}, 25, 'https://www.tounsia.net/uploads/2017/09/couscous-mannani.jpg')
+var mosli = createMeal('mosli with rass', {'potato':'200 gr', 'tomato':'100 gr', 'onion': '30 gr', 'garlic': '10 gr', 'peper':'40 gr', 'potato':'50 gr', 'pumpkin': '100 gr', 'meat':'500 gr', 'curcuma': '25 gr'}, 30, 'http://www.baya.tn/wp-content/uploads/2014/07/mosli-allouch-baya.jpg')
+var rouzJerbi = createMeal('rouz jerbi', {'rice': '200 gr', 'spinach': '25 gr', 'peas': '30 gr', 'dandelion': '40 gr', 'chicken': '100 gr','hrous': '50 gr','curcuma': '10 gr','salt': '2gr'}, 20, 'https://www.cuisinetunisienne.tn/wp-content/uploads/2019/02/Recette-Riz-Djerbien-1080x841.jpg')
+var pizza = createMeal('pizza', {'pates' : '250 gr', 'tomato': '200 gr', 'oil': '20 ml', 'salt' : '5 gr', 'garlic': '10 gr', 'tuna': '100 gr', 'cheese':'50 gr'}, 12, 'https://www.genovaseafood.com/uploads/recipes/pizza-with-tuna-capers-and-olives-sm.jpg')
+var hamburger = createMeal('hamburger', {'pates' : '250 gr ', 'tomato': '200 gr', 'oil': '20 ml', 'salt' : '5 gr', 'garlic': '10 gr', 'meal': '200 gr', 'cheese':'40 gr'}, 12, 'https://static.cuisineaz.com/400x320/i99425-hamburger.jpg')
+var mlawi = createMeal('mlawi', {'pates' : '250 gr', 'tomato': '200 gr', 'oil': '20 ml', 'garlic': '10 gr', 'tuna': '50 gr', 'cheese':'15 gr'}, 12, 'https://i.pinimg.com/originals/b6/7c/7f/b67c7fdfb6a2c8858c9c3cd1f4b3beef.jpg')
+var nwasser = createMeal('nwaser', {'pates nwasser' : '250 gr', 'tomato': '200 gr', 'oil': '20 ml', 'salt' : '5 gr', 'garlic': '1 gr', 'chicken': '200 gr'}, 12, 'https://www.cuisinetunisienne.tn/wp-content/uploads/2019/03/Recette-Nwasser-au-poulet-1080x720.jpg')
+var tunisianplate = createMeal('tunisian', {'eggs' : '2 eggs', 'tomato': '200 gr', 'oil': '20 ml', 'salt' : '5 gr','harissa':'15 gr', 'garlic': '10 gr', 'chicken': '200 gr' }, 10, 'https://i.pinimg.com/originals/f6/e5/6f/f6e56feb4dece9a0e8f672a240d306cf.jpg')
+var duida = createMeal('duida', {'duida' : '200 gr', 'tomato': '200 gr', 'oil': '20 ml', 'salt' : '5 gr','harissa':'15 gr', 'garlic': '10 gr', 'cow meat': '200 gr' }, 10, 'https://lepetitjournal.com/sites/default/files/styles/main_article/public/2018-06/DWIDA.png?itok=s_d2Om8M')
+var hargma = createMeal('hargma', {'animal legs' : ' 300 gr', 'tomato': '200 gr','onion':'20 gr', 'oil': '20 ml', 'salt' : '5 gr','harissa':'15 gr', 'garlic': '1 gr', 'cow meat': 200, }, 10, 'https://www.recettemarocaine365.com/wp-content/uploads/2017/02/hargma.jpg')
+var brik = createMeal('brik with eggs', {'malssouka' : '20 gr', 'onion':'20 gr', 'potato': '20 gr', 'salt' : '5 gr','harissa':'15 gr', 'tuna': '200 gr', 'eggs':'1 egg' }, 10, 'https://i.ytimg.com/vi/qDs77bFs-Rk/maxresdefault.jpg')
+var mtabga = createMeal('mtabga', {'bread' : '100 gr ', 'onion':'50 gr', 'salt' : '5 gr','harissa':'15 gr',  'eggs':'1 egg' }, 10, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI84MOKxdjewGwm-noX4xs2iuS7Hy-OGg7sNrUz8ZUOrvhckpf&s')
+var kafteji = createMeal('kafteji', {'pumpkin' : '80 gr', 'onion':'20 gr', 'salt' : '5gr ','harissa':'15 gr',  'eggs':'1 egg' }, 10, 'https://www.carthageplus.net/wp-content/uploads/2018/05/30856051_1720283794704409_5357705005765754880_n-1-780x405.jpg')
+var lablebi = createMeal('lablebi', {'bread' : '200 gr', 'onion':'20 gr', 'salt' : '5 gr','harissa':'15 gr',  'eggs':'1 egg' }, 10, 'https://i1.wp.com/www.1001recettes.tn/wp-content/uploads/2018/12/Lablabi-bel-hargma.jpg?fit=600%2C300&ssl=1&w=640')
 
+var meals =[rouzJerbi,spaguetty,couscousWithFish,mosli,pizza,hamburger,mlawi,nwasser,duida,hargma,brik,mtabga,kafteji,lablebi,tunisianplate] ;
 
-
-var meals =[spaguetty,couscousWithFish,mosli,rouzJerbi,pizza,hamburger,mlawi,nwasser,tunisianplate,duida,hargma,brik,mtabga,lablebi,kaftegi] ;
-
-var url = 'https://victoriapublicmarket.com/wp-content/uploads/2018/02/10492h-cooking-ingredients-picture-in-hd.jpg'
-function affichageinitial(){							// this function is for the initial load of the page
-	$('#main').html('')	
-   for(var i =0; i < meals.length;i++){					// we loop the meals array and we append all the element's image to the main
-    var imgdiv = $('<div class ="imagediv"></div>')
-	var img = $('<img>')
-	img.attr('id','imageid')
-
-    img.attr('src', meals[i].img)
-    imgdiv.html(img)
-   $('#main').append(imgdiv)
-}
-}
- affichageinitial() ;
-$('body').on('click', '#clear',function(){
-	affichageinitial() 
-})
-
-
-
-var result = [];
-function search(arr, key){					//search function: this function takes an array of objects and a key (the key is an ingredient)
-	// var result = [];						//and returns a new array (result) with all the object that dont include that key 
-	//console.log(arr)
-	result = arr.filter(function(element){
-		//console.log(element.ingredients)
-
-		return !element.ingredients.hasOwnProperty(key)
-	})
-	return result;
-}
 
 function createMeal(name, ingredients, price, img){				//this function is to create a meal, it takes some parameters that represent 
 	var meal = {} ;												//the ingredients,price, name and image of the meal
@@ -62,8 +28,29 @@ function createMeal(name, ingredients, price, img){				//this function is to cre
 }
 
 
+// function createMeal2(name){	
+// 	var meal = {} ;											
+// 	meal.name = name ;
+// 	meal.ingredients = {} ;
+// 	meal.addingredients = addingredients ;
+// 	meal.price = addprice ;
+// 	meal.img = addimg ;
 
-// this phase is to add a new ingrediens to the list of the unwanted ingeridients
+// 	return meal ;
+// }
+// var addingredients = function(ingred, portion){
+// 	this.ingredients[ingred] = portion ;
+// }
+
+// var addprice = function(price){
+// 	return price
+// }
+//  var addimg = function(src){
+//  	this.img = src ;
+// }
+
+
+//add new ingredient
 
 $('#b1').on('click', function(){
 	var strAdded = $('#added').val()
@@ -72,71 +59,99 @@ $('#b1').on('click', function(){
 	optstr.appendTo('#slt')	
 
 })
-//affichage ki tekhtar key
+
+
+//display all meals
+function affichage(arr){
+
+	$('#main').html('')	   
+   for(var i =0; i < arr.length;i++){					
+  var imgdiv = $('<div class ="imagediv"></div>')
+	var img = $('<img id=imageid>')
+	var ingDiv = $('<div class=uldiv><div>')
+	$('#showelement').append(arr[i].name)
+	for(var j in arr[i].ingredients){
+		var str = '<li>' + j + ': ' + arr[i].ingredients[j] + '</li>'
+		ingDiv.append(str)
+	}
+
+    img.attr('src', arr[i].img)
+    
+    imgdiv.append(ingDiv)
+    imgdiv.append(img)
+   $('#main').append(imgdiv)
+}
+}
+
+affichage(meals)
+
+//add to the option list
+
+// $('#b1').on('click', function(){
+// 	var strAdded = $('#added').val()
+// 	var optstr = $('<option></option>')
+// 	optstr.text(strAdded)
+// 	optstr.appendTo('#slt')	
+// })
+
+//variable containing the result of the search
+
+var result = [];
+
+
+function search(arr, key){																
+	result = arr.filter(function(element){		
+	return !element.ingredients.hasOwnProperty(key)
+	})
+	return result;
+}
 
 var resultOfSearch ;
 
-//this function is for the click on the search button
-$('#search').on('click', function(){
-	$('#main').html('')						//when the button is clicked the first ting we clear the main section
-	// console.log(this)
-var selectedStr = $( "#slt option:selected" ).text();		// this variables takes the selected incredient as a string
-
-   resultOfSearch = search(meals, selectedStr)					//this array takes the result of the meals that doesnt contain the selected ingredients 
-   console.log(resultOfSearch)
+$('#search').on('click', function(){																	
+																												
+var selectedStr = $( "#slt option:selected" ).text();		
+	resultOfSearch = undefined;
+   resultOfSearch = search(meals, selectedStr)	
    
-   for(var i =0; i < resultOfSearch.length;i++){				//now we loop in this array and we append the image to the screen
-	var imgdiv = $('<span class ="imagediv"></span>')		//for that, we start by initilasing a div and give it an class
-	var img = $('<img>')								//a variable containing an image tag
-	// img.attr('class = wasfa')
-	img.attr('id','imageid')							//we add a class for each image
-    img.attr('src', resultOfSearch[i].img)						//now for each image we add a source of the image inherited from the meal object
-    imgdiv.html(img)									//now we inject the image inside the div element
-   $('#main').append(imgdiv)							//at the end we add the constructed div wich contains an image to the main div
-	}
-// return result;											
+   affichage(resultOfSearch)				
+ 
+																																		
  })
 
 
-
-var photoHtml = ''
-$('body').on('click','.imagediv', function() {
-																		//this function is to create a variable containing the object	//of the image that we click on
-  photoHtml = this.innerHTML ;	
+function lookForObject(obj){
+	photoHtml = obj.innerHTML ;	
   																																								//this variable takes the html text  
   var arrayof= photoHtml.split('')																								//now we extract the image source from that selection  
   var newArr = arrayof.slice(arrayof.indexOf('h'),arrayof.length -2).join('') ;		 
-	var objResult ;																																	//this object will represents the source obj of the image we clicked on
+																																									//this object will represents the source obj of the image we clicked on
 for(var i =0; i<meals.length; i++){																								//we loop the meals array and we look for the object that contains the image we clicked on
 	if(meals[i].img === newArr){
 		objResult = meals[i]																													//whenever we find that object we put it in the variable
-		console.log(objResult)
 	}
 }
-var description = objResult.name	
-var nameh = $('<h2></h2>')
-nameh.text(objResult.name)
-console.log('this is the name')
-console.log(nameh)
-$(this).append(nameh)
-var ingredientList= $('<ul></ul>')
-for(var i in objResult.ingredients){
-	var list = $('<li></li>') ;
-	list.text(i + ': ' + objResult.ingredients[i])
-	ingredientList.append(list)
-	
 }
-$(this).append(ingredientList)
 
-console.log('this')
-console.log(this)
-// $(this).animate({
-//     left: '250px',
-//     opacity: '0.5',
-//     height: '150px',
-//     width: '150px'
+
+
+
+$('body').on('click','.imagediv', function() {
+																								 
+	console.log($(this.html))
+	$('#showelement').show()
+	$(this).find('.uldiv').show()
+	$('#main').html('')
+	$('#showelement').html('')
+	$($(this).html()).appendTo('#showelement')
+	
 })
 
 
- 
-//now we construct the element we want to affiche when a photo is clicked
+$('.uldiv').hide()
+$('#showelement').hide()
+
+$('body').on('click','#showelement',function(){
+	affichage(meals)
+	$('#showelement').hide()
+})
